@@ -1,6 +1,7 @@
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+It was designed using [Bootswatch](https://bootswatch.com), [React-Bootstrap](https://react-bootstrap.github.io/), and some [inline CSS](https://www.w3schools.com/Css/).
 
 ## Available Scripts
 
@@ -74,11 +75,34 @@ Disclaimer: This is our scuffed attempt at being full-stack web developers. When
 ## Frontend
 ### Rendered Components
 We have divided our frontend side of the project into 2 parts:
-Screens
+  1. Screens
   - These are the Components that actually get rendered to the UI of the website. For example, a homescreen, a loginscreen, etc. 
   - They are in the src/screens folder.
-Components
+  2. Components
   - These components are compounded together to make the screens. They are the individual parts that get put together after their development. For example, a Header, a Footer, and a Profile component will go together as one Profile screen. 
   - Because we didn't know how else to do this, we split the components into 2 groups: components and LoggedInComponents. The LoggedInComponents are specifically rendered if the user is logged in. (authentication will be covered later). 
   - The components are in the src/components folder and src/LoggedInComponents folder.
+### Individual Screens
+**All Screens Contain the Header and Footer Components**
+- **Not Logged In** HomeScreen
+     - Page that is rendered when user intially opens the website. "/"
+     - Contains 3 Different Unique Components:
+      1. 
+      2.
+      3. 
+- LoginScreen
+     - A nested numbered list
+     - Which is numbered
+- DonationScreen
+     - A nested numbered list
+     - Which is numbered
+- RegistrationScreen
+     - A nested numbered list
+     - Which is numbered
+- NotFoundPage
+     - Simply a 404 page in case someone types in a non-existent url path or something like that.
+- DocumentScreen
+     - A nested numbered list
+     - Which is numbered
+
 
