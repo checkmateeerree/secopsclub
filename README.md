@@ -73,7 +73,9 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 Disclaimer: This is our scuffed attempt at being full-stack web developers. When you take over you can probably refactor a bunch of the code to make it cleaner.
 ## Frontend
 ### Rendered Components
-We have divided our frontend side of the project into 2 parts.
+We have divided our frontend side of the project into 2 parts:
 1. Screens
+These are the Components that actually get rendered to the UI of the website. For example, a homescreen, a loginscreen, etc. 
 2. Components
+These components are compounded together to make the screens. They are the individual parts that get put together after their development. For example, a Header, a Footer, and a Profile component will go together as one Profile screen. 
 
