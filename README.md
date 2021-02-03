@@ -70,5 +70,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
 # Now, On to the Actual Project!
-
+This is our scuffed attempt at being full-stack web developers. When you take over you can probably refactor a bunch of the code to make it cleaner.
 ## Frontend
