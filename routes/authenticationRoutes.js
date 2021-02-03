@@ -196,6 +196,10 @@ router.post('/api/registeredpassword', (req, res) => {
     });
 }) 
 
+router.get('/api/users', requireLogin, async(req, res) => {
+    return res.json({message: "high"})
+})
+
 
 module.exports = router
 
