@@ -75,10 +75,10 @@ Disclaimer: This is our scuffed attempt at being full-stack web developers. When
 ### Rendered Components
 We have divided our frontend side of the project into 2 parts:
 1. Screens
-- These are the Components that actually get rendered to the UI of the website. For example, a homescreen, a loginscreen, etc. 
-- They are in the src/screens folder.
+  - These are the Components that actually get rendered to the UI of the website. For example, a homescreen, a loginscreen, etc. 
+  - They are in the src/screens folder.
 2. Components
-- These components are compounded together to make the screens. They are the individual parts that get put together after their development. For example, a Header, a Footer, and a Profile component will go together as one Profile screen. 
-- Because we didn't know how else to do this, we split the components into 2 groups: components and LoggedInComponents. The LoggedInComponents are specifically rendered if the user is logged in. (authentication will be covered later). 
-- The components are in the src/components folder and src/LoggedInComponents folder.
+  - These components are compounded together to make the screens. They are the individual parts that get put together after their development. For example, a Header, a Footer, and a Profile component will go together as one Profile screen. 
+  - Because we didn't know how else to do this, we split the components into 2 groups: components and LoggedInComponents. The LoggedInComponents are specifically rendered if the user is logged in. (authentication will be covered later). 
+  - The components are in the src/components folder and src/LoggedInComponents folder.
 
