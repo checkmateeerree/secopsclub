@@ -87,9 +87,9 @@ We have divided our frontend side of the project into 2 parts:
 - **Not Logged In** HomeScreen
      - Page that is rendered when user intially opens the website. "/"
      - Contains 3 Different Unique Components:
-      1. 
-      2.
-      3. 
+      1. Objective Of Website. This component showcases a general oversight of why our club is important. 
+      2. Our Mission. This component displays a preview of our club curriculum and mission statement.
+      3. Interested in Joining. 
 - LoginScreen
      - A nested numbered list
      - Which is numbered
