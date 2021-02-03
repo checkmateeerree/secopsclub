@@ -47,6 +47,8 @@ const LoggedInHeader = () => {
                                     <LinkContainer to="/donate">
                                         <Nav.Link>Donate</Nav.Link>
                                     </LinkContainer>
+
+                                    <Nav.Link onClick={() => window.location.href="https://zoom.us"}>Club Zoom Link</Nav.Link>
                              
                                     <Nav.Link onClick={logOutFunction}>Logout</Nav.Link>
                                    

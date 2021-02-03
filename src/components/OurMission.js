@@ -4,7 +4,7 @@ import {LinkContainer} from 'react-router-bootstrap'
 
 const OurMission = () => {
     return (
-        <div style={{"paddingTop": "2vh", "paddingBottom": "4vh", "backgroundImage": "url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.pixelstalk.net%2Fwp-content%2Fuploads%2F2016%2F09%2FFree-Download-All-White-Background.jpg&f=1&nofb=1)", "background-size": "cover"}}>
+        <div style={{"paddingTop": "3vh", "paddingBottom": "4vh", "backgroundImage": "url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.pixelstalk.net%2Fwp-content%2Fuploads%2F2016%2F09%2FFree-Download-All-White-Background.jpg&f=1&nofb=1)", "background-size": "cover"}}>
             <Container style={{color: 'black'}}>
                 <h2 className="text-center">Our Mission</h2>
                 <p>We strive to raise awareness and knowledge of the field of security within the Lancer community through a friendly and safe learning environment.</p>

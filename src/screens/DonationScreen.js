@@ -5,9 +5,9 @@ const DonationScreen = () => {
         window.location = "https://paypal.me/DiscordConcord"
     }
     return (
-        <div>
+        <div className="py-3" style={{"backgroundColor": "rgb(244,244,244)"}}>
             <Container>
-                <h2 className="text-center pt-3 pb-2"><strong>Please Consider Donating to Our Club</strong></h2>
+                <h2 className="text-center"><strong>Please Consider Donating to Our Club</strong></h2>
 
                 <div  className="text-center">
                     <Button variant="success" size="lg" onClick={redirectToPaypal}>Donate Using Paypal!</Button>

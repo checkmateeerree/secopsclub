@@ -12,6 +12,10 @@ const LoggedInProfile = ({firstName, lastName, email, gradYear, meetingsAttended
     }
     const submitHandler = (e) => {
         e.preventDefault()
+        if (oldPassword === newPassword){
+            alert("You cannot change your password to the same password")
+            return
+        }
         axios.put("http://173.70.190.90:7777/api/changepassword", {password: oldPassword, studentID, newPassword}).then((res) => {
             if (res.data.result === "Successful Authentication"){
                 toggleShowA()
@@ -24,7 +28,7 @@ const LoggedInProfile = ({firstName, lastName, email, gradYear, meetingsAttended
         )
     }
     return (
-        <div className="py-3" style={{"minHeight": "80vh"}}>
+        <div className="py-3" style={{"minHeight": "80vh", "backgroundColor": "rgb(244,244,244)"}}>
             <Toast show={showA} onClose={toggleShowA} style={{"z-index": "3", "margin-left": "50vw"}}>
                 <Toast.Header>
                     <strong className="mr-auto">Security Ops Club</strong>
