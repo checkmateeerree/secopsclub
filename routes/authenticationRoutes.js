@@ -197,7 +197,7 @@ router.post('/api/registeredpassword', (req, res) => {
 }) 
 
 router.get('/api/users', requireLogin, async(req, res) => {
-    const users = await User.findAll()
+    const users = await User.find()
     return res.json({message: users})
 })
 
