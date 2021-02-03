@@ -197,7 +197,8 @@ router.post('/api/registeredpassword', (req, res) => {
 }) 
 
 router.get('/api/users', requireLogin, async(req, res) => {
-    return res.json({message: "high"})
+    const users = User.findAll()
+    return res.json({message: users})
 })
 
 
