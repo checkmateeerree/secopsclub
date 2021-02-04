@@ -220,7 +220,7 @@ router.post('/api/adddate', requireLogin, async(req, res) => {
 
     new_meeting.save((err, new_meeting_) => {
         if (err) return res.json({success: false, message:"Error: Duplicate values"})
-        return res.json({success: true, message:`Meeting date ${new_meeting} saved to DB!`})
+        return res.json({success: true, message:`Meeting date ${new_meeting_} saved to DB!`})
     })
 
 })
