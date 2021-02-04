@@ -201,6 +201,12 @@ router.get('/api/users', requireLogin, async(req, res) => {
     return res.json({message: users})
 })
 
+router.put('/api/changetotalmeetings', requireLogin, async(req, res) => {
+    const totalMeetingsAttended = req.body.meetingsAttended_
+    User.updateMany({}, {$set: {"meetingsAttended": totalMeetingsAttended}})
+})
+
+
 
 module.exports = router
 
