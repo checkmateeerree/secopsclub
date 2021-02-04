@@ -203,8 +203,8 @@ router.get('/api/users', requireLogin, async(req, res) => {
 
 router.put('/api/changetotalmeetings', requireLogin, async(req, res) => {
     const totalMeetingsAttended = req.body.meetingsAttended_
-    const res = User.updateMany({}, {$set: {"meetingsAttended": totalMeetingsAttended}})
-    return res.json({res})
+    const result = User.updateMany({}, {$set: {"meetingsAttended": totalMeetingsAttended}})
+    return res.json({result})
 })
 
 
