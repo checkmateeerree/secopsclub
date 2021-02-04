@@ -226,5 +226,10 @@ router.post('/api/adddate', requireLogin, async(req, res) => {
 
 })
 
+router.get('/api/dates', async(req, res) => {
+    const meetings = await MeetingDate.find()
+    return res.json({meetings})
+})
+
 module.exports = router
 
