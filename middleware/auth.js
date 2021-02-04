@@ -6,6 +6,7 @@ module.exports = (req, res, next) => {
         token,
         process.env.JWT_SECRET
       )
+      console.log(decodedToken)
       next()
     } catch (error) {
        return res.status(401).json({ message: "Authorization failed!" });
