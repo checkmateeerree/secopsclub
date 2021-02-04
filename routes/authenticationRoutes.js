@@ -211,8 +211,9 @@ router.put('/api/changetotalmeetings', requireLogin, async(req, res) => {
 router.post('/api/adddate', requireLogin, async(req, res) => {
     const newMeetingDate = req.body.meetingDate
     const currentDate = await MeetingDate.find({meetingDate: newMeetingDate})
+    
     if (currentDate){
-        return res.json({message: "Meeting Date already exists"})
+        return res.json({message: currentDate})
     }
     const new_meeting = new MeetingDate({
         meetingDate: newMeetingDate
