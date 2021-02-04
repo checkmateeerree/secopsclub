@@ -201,7 +201,7 @@ router.get('/api/users', requireLogin, async(req, res) => {
     return res.json({message: users})
 })
 
-router.put('/api/changetotalmeetings', requireLogin, async(req, res) => {
+router.put('/api/changetotalmeetings', async(req, res) => {
     console.log('hi')
     const totalMeetingsAttended = req.body.meetingsAttended_
     console.log(totalMeetingsAttended)
