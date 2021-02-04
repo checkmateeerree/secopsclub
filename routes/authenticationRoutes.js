@@ -1,6 +1,7 @@
 const express = require('express')
 const bcryptjs = require('bcryptjs')
 const User = require('../models/UserModel')
+const MeetingDate = require('../models/MeetingDateModel')
 const jwt = require('jsonwebtoken')
 const requireLogin = require('../middleware/auth')
 const nodemailer = require('nodemailer')
@@ -202,13 +203,27 @@ router.get('/api/users', requireLogin, async(req, res) => {
 })
 
 router.put('/api/changetotalmeetings', requireLogin, async(req, res) => {
-    
     const totalMeetingsAttended = req.body.meetingsAttended_
     const result = await User.updateMany({}, {$set: {"meetingsAttended": totalMeetingsAttended}})
     return res.json({result})
 })
 
+router.post('/api/adddate', requireLogin, async(req, res) => {
+    const newMeetingDate = req.body.meetingDate
+    const currentDate = await MeetingDate.find({meetingDate: newMeetingDate})
+    if (currentDate){
+        return res.json({message: "Meeting Date already exists"})
+    }
+    const new_meeting = new MeetingDate({
+        meetingDate: newMeetingDate
+    })
 
+    new_meeting.save((err, new_meeting_) => {
+        if (err) return res.json({success: false, message:"Error: Duplicate values"})
+        return res.json({success: true, message:`Meeting date ${new_meeting} saved to DB!`})
+    })
+
+})
 
 module.exports = router
 
