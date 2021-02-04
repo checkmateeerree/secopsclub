@@ -212,7 +212,7 @@ router.post('/api/adddate', requireLogin, async(req, res) => {
     const newMeetingDate = req.body.meetingDate
     const currentDate = await MeetingDate.find({meetingDate: newMeetingDate})
     
-    if (currentDate){
+    if (currentDate.length > 0){
         return res.json({message: currentDate})
     }
     const new_meeting = new MeetingDate({
