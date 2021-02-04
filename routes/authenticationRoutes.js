@@ -83,11 +83,11 @@ router.post('/api/login', (req, res) => {
                 const token = jwt.sign(
                     {studentID: user.studentID, userId: user._id, firstName: user.firstName, lastName: user.lastName, email: user.email, gradYear: user.gradYear, admin: user.admin, leadershipPosition: user.leadershipPosition, yearsInClub: user.yearsInClub, meetingsAttended: user.meetingsAttended},
                     process.env.JWT_SECRET,
-                    { expiresIn: "60s" }
+                    { expiresIn: "24h" }
                   );
                 return res.status(200).json({
                     token: token,
-                    expiresIn: 60,
+                    expiresIn: 86400,
                     userId: user._id
                   });
                 }
